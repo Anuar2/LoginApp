@@ -2,8 +2,8 @@
 //  AboutMeViewController.swift
 //  LoginApp
 //
-//  Created by Alexey Efimov on 31.05.2020.
-//  Copyright © 2020 Alexey Efimov. All rights reserved.
+//  Created by Ekaterina Bateeva on 13/12/2020.
+//  Copyright © 2020 Ekaterina Bateeva. All rights reserved.
 //
 
 import UIKit
