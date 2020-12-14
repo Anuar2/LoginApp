@@ -2,8 +2,8 @@
 //  LoginViewController.swift
 //  LoginApp
 //
-//  Created by Alexey Efimov on 19/06/2019.
-//  Copyright © 2019 Alexey Efimov. All rights reserved.
+//  Created by Ekaterina Bateeva on 13/12/2020.
+//  Copyright © 2019 Ekaterina Bateeva. All rights reserved.
 //
 
 import UIKit
@@ -75,13 +75,12 @@ extension LoginViewController {
 extension LoginViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField {
-            textField.resignFirstResponder()
             passwordTextField.becomeFirstResponder()
         } else {
             logInPressed()

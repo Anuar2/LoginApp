@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment version="4864" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKd-Et-Iqd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKd-Et-Iqd">
                                 <rect key="frame" x="160.5" y="315.5" width="54" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log In"/>
@@ -41,7 +42,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="IUS-cS-Lpc"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-NM-4hO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zl-NM-4hO">
                                 <rect key="frame" x="40" y="367.5" width="118" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Forgot User Name?"/>
@@ -49,7 +50,7 @@
                                     <action selector="forgotUserNamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnX-8G-eAA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-6K-Zbt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-6K-Zbt">
                                 <rect key="frame" x="226" y="367.5" width="109" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Forgot Password?"/>
@@ -58,7 +59,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="RnK-6K-Zbt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9zl-NM-4hO" secondAttribute="trailing" constant="8" symbolic="YES" id="2LZ-HW-Pm3"/>
                             <constraint firstItem="BKd-Et-Iqd" firstAttribute="top" secondItem="oIU-xj-0yZ" secondAttribute="bottom" constant="16" id="AMv-4x-n3L"/>
@@ -74,7 +76,6 @@
                             <constraint firstItem="RnK-6K-Zbt" firstAttribute="trailing" secondItem="oIU-xj-0yZ" secondAttribute="trailing" id="oML-hY-DEl"/>
                             <constraint firstItem="BKd-Et-Iqd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="slK-1t-l3H"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="oIU-xj-0yZ" id="szz-20-gA6"/>
@@ -108,8 +109,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dui-62-qyN">
-                                <rect key="frame" x="153" y="477" width="69" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dui-62-qyN">
+                                <rect key="frame" x="152.5" y="477" width="70" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Log out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -119,6 +120,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="yHU-w9-Rtf"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yHU-w9-Rtf" firstAttribute="bottom" secondItem="SXx-Yf-3yO" secondAttribute="bottom" multiplier="3.3" id="0QZ-nw-4vr"/>
@@ -128,7 +130,6 @@
                             <constraint firstItem="lLb-Fn-IVD" firstAttribute="top" secondItem="SXx-Yf-3yO" secondAttribute="bottom" constant="40" id="pKK-P6-arI"/>
                             <constraint firstItem="yHU-w9-Rtf" firstAttribute="bottom" secondItem="dui-62-qyN" secondAttribute="bottom" multiplier="1.2" id="sbD-jj-bgT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="yHU-w9-Rtf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person.circle" catalog="system" id="jib-Tn-Clc"/>
                     <connections>
@@ -148,8 +149,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-MF-kg3">
-                                <rect key="frame" x="150" y="314.5" width="75" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-MF-kg3">
+                                <rect key="frame" x="149.5" y="314.5" width="76" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Mor Info">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,18 +160,18 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6pp-7F-uHP"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="doZ-MF-kg3" firstAttribute="centerX" secondItem="7Cb-c2-jGy" secondAttribute="centerX" id="QJa-Xe-pLh"/>
                             <constraint firstItem="doZ-MF-kg3" firstAttribute="centerY" secondItem="7Cb-c2-jGy" secondAttribute="centerY" id="pDE-h2-X7y"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6pp-7F-uHP"/>
                     </view>
                     <navigationItem key="navigationItem" id="FQL-kb-3XI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4XE-jq-Vzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2356" y="798.35082458770626"/>
+            <point key="canvasLocation" x="2167" y="800"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UWO-jz-xte">
@@ -179,14 +180,14 @@
                     <view key="view" contentMode="scaleToFill" id="yaF-of-TtH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Zfj-IJ-onO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BgD-EZ-xr3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMR-gx-EGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3148" y="797.45127436281871"/>
+            <point key="canvasLocation" x="2959" y="799"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vKY-sg-TNT">
@@ -229,6 +230,12 @@
     </scenes>
     <resources>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="rosette" catalog="system" width="100" height="128"/>
+        <image name="rosette" catalog="system" width="106" height="128"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
